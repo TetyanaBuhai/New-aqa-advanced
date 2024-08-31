@@ -35,3 +35,4 @@ function sell_alcohol(price, number, age, your_age, religios) {
 let s = sell_alcohol(4, 2, 30, age, "loh");
 
 console.log(s);
+
