@@ -1,12 +1,12 @@
 const age = 18;
 
-function check_if_allowed(age1, age2, religios) {
+function check_if_allowed(age1, age2, religion) {
   if (typeof age1 !== "number" || typeof age2 !== "number") {
     console.log("incorrect data");
     return;
   }
 
-  if (religios !== "loh") {
+  if (religion !== "loh") {
     console.log("go away");
     return;
   }
@@ -24,9 +24,9 @@ function log_sum(num) {
   return num + " $";
 }
 
-function sell_alcohol(price, number, age, your_age, religios) {
-  if (!check_if_allowed(age, your_age, religios)) {
-    return "forbiden";
+function sell_alcohol(price, number, age, your_age, religion) {
+  if (!check_if_allowed(age, your_age, religion)) {
+    return "forbidden";
   }
   let sum = price * number;
   return log_sum(sum);
